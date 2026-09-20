@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aisyah Maryam Nurwulan | Portfolio</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Aisyah<span>.</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-btn">Hubungi Saya</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="profile-avatar-wrapper">
+      <img src="assets/images/foto.jpeg" alt="Foto Aisyah Maryam" class="profile-avatar">
+    </div>
+
+    <div class="badge">
+      <i data-lucide="sparkles" class="badge-icon"></i> IT Support & Computer Systems Student
+    </div>
+    <h1>Hello, I'm Aisyah <i data-lucide="sparkles" class="hero-icon"></i></h1>
+    <h2>A Computer Systems student constantly learning and evolving in the tech space.</h2>
+    <p>I am a 5th-semester Computer Systems undergraduate with a strong interest in technology, information systems, database management, computer networking, and systems development.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Project</a>
+      <a href="#contact" class="btn-secondary">Hubungi Saya</a>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <div class="line"></div>
+    </div>
+    <div class="about-card">
+      <p>As a 5th-semester Computer Systems student, I am deeply passionate about information technology, database management, networking, and systems development.</p>
+      <p>Throughout my academic journey, I have gained hands-on experience by delivering diverse technical projects—ranging from database processing and web-based information systems to data analytics and custom Odoo module configuration.</p>
+      <p>Driven by curiosity and a desire to continuously refine my craft, I thrive on exploring new technologies and solving complex real-world problems through practical applications.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-title">
+      <h2><i data-lucide="folder-code" class="section-icon"></i> Projects & Experience</h2>
+      <div class="line"></div>
+    </div>
+    <div class="grid">
+      
+      <!-- Project 1 -->
+      <div class="card" onclick="openModal('project1')">
+        <div>
+          <div class="card-tag">Web Systems</div>
+          <h3>Student Attendance Web Application <span class="card-click-icon"><i data-lucide="arrow-up-right"></i></span></h3>
+          <p>Mengembangkan sistem informasi berbasis web untuk mengelola data siswa dan absensi menggunakan PHP & MySQL.</p>
+        </div>
+        <div class="tech-stack">
+          <span class="tech">PHP</span><span class="tech">MySQL</span><span class="tech">Bootstrap</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card" onclick="openModal('project2')">
+        <div>
+          <div class="card-tag">ERP / HRMS</div>
+          <h3>Odoo 16 HRMS Module Development <span class="card-click-icon"><i data-lucide="arrow-up-right"></i></span></h3>
+          <p>Kustomisasi dan konfigurasi modul HRMS di Odoo 16 menggunakan Python dan XML untuk efisiensi sistem HR.</p>
+        </div>
+        <div class="tech-stack">
+          <span class="tech">Odoo 16</span><span class="tech">Python</span><span class="tech">XML</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card" onclick="openModal('project3')">
+        <div>
+          <div class="card-tag">Networking</div>
+          <h3>Computer Network Simulation <span class="card-click-icon"><i data-lucide="arrow-up-right"></i></span></h3>
+          <p>Simulasi topologi jaringan, routing protocol, dan troubleshooting konektivitas LAN menggunakan Cisco Packet Tracer.</p>
+        </div>
+        <div class="tech-stack">
+          <span class="tech">Cisco</span><span class="tech">TCP/IP</span><span class="tech">Routing</span>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card" onclick="openModal('project4')">
+        <div>
+          <div class="card-tag">Database</div>
+          <h3>Database Design & Management <span class="card-click-icon"><i data-lucide="arrow-up-right"></i></span></h3>
+          <p>Merancang dan mengelola basis data relasional MySQL, menyusun query SQL kompleks, dan JOIN tabel via XAMPP.</p>
+        </div>
+        <div class="tech-stack">
+          <span class="tech">MySQL</span><span class="tech">SQL</span><span class="tech">XAMPP</span>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="card" onclick="openModal('project5')">
+        <div>
+          <div class="card-tag">Data Science</div>
+          <h3>Rainfall Data Analysis <span class="card-click-icon"><i data-lucide="arrow-up-right"></i></span></h3>
+          <p>Pengolahan dan analisis data curah hujan menggunakan Python, Pandas, dan Matplotlib untuk visualisasi pola data.</p>
+        </div>
+        <div class="tech-stack">
+          <span class="tech">Python</span><span class="tech">Pandas</span><span class="tech">Matplotlib</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-title">
+      <h2>My Skills</h2>
+      <div class="line"></div>
+    </div>
+    
+    <div class="skills-group">
+      <h3><i data-lucide="cpu" class="skill-icon"></i> Hardware & Networking</h3>
+      <div class="skill-badges">
+        <span class="badge-skill">Troubleshooting Dasar</span>
+        <span class="badge-skill">Perangkat Keras</span>
+        <span class="badge-skill">Jaringan Komputer Dasar</span>
+        <span class="badge-skill">Cisco Packet Tracer</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3><i data-lucide="code" class="skill-icon"></i> Database & Programming</h3>
+      <div class="skill-badges">
+        <span class="badge-skill">MySQL Dasar</span>
+        <span class="badge-skill">SQL Query & JOIN</span>
+        <span class="badge-skill">PHP</span>
+        <span class="badge-skill">Python</span>
+        <span class="badge-skill">HTML5 / CSS3</span>
+        <span class="badge-skill">Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3><i data-lucide="wrench" class="skill-icon"></i> Tools & Software</h3>
+      <div class="skill-badges">
+        <span class="badge-skill">VS Code</span>
+        <span class="badge-skill">XAMPP</span>
+        <span class="badge-skill">Google Colab</span>
+        <span class="badge-skill">Overleaf</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="skills">
+    <div class="section-title">
+      <h2>Education</h2>
+      <div class="line"></div>
+    </div>
+    <div class="education-card">
+  <!-- Logo Kampus / Icon -->
+  <div class="edu-logo-wrapper">
+    <img src="assets/images/logo.png" alt="Logo UBK" class="edu-logo">
+  </div>
+
+  <!-- Detail Informasi -->
+  <div class="edu-info">
+    <div class="edu-header">
+      <div>
+        <h3>Universitas Bung Karno</h3>
+        <p class="degree">Sistem Komputer (S.Kom.)</p>
+      </div>
+      <span class="edu-year">2024 - 2028</span>
+    </div>
+
+    <div class="coursework-wrapper">
+      <span class="coursework-title">Relevant Coursework:</span>
+      <div class="course-tags">
+        <span class="course-tag">Computer Installation & Maintenance</span>
+        <span class="course-tag">Computer Organization & Architecture</span>
+        <span class="course-tag">Data Communications</span>
+        <span class="course-tag">Database Programming & Design</span>
+        <span class="course-tag">Object-Oriented Modeling</span>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+<section id="contact">
+  <div class="contact-wrapper">
+    <h2>Mari Terhubung</h2>
+    <p>Terbuka untuk diskusi proyek, kolaborasi, dan peluang IT Support.</p>
+
+    <div class="contact-grid">
+
+  <!-- Gmail -->
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aisyahmaryamn01@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-item gmail">
+    <div class="icon-box">
+      <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="#EA4335">
+        <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.272H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.545l8.073-6.052c1.618-1.214 3.927-.059 3.927 1.964z"/>
+      </svg>
+    </div>
+    <div class="contact-text">
+      <span>Email</span>
+    </div>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-item instagram">
+    <div class="icon-box">
+      <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="#E4405F">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    </div>
+    <div class="contact-text">
+      <span>Instagram</span>
+    </div>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/aisyah-maryam-7a9aa6293/" target="_blank" rel="noopener noreferrer" class="contact-item linkedin">
+    <div class="icon-box">
+      <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="#0A66C2">
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+      </svg>
+    </div>
+    <div class="contact-text">
+      <span>LinkedIn</span>
+    </div>
+  </a>
+</div>
+</section>
+
+<!-- FOOTER DI LUAR WRAPPER -->
+<footer>
+  <p>&copy; 2026 Aisyah Maryam Nurwulan. Portfolio Website.</p>
+</footer>
+
+  <!-- MODAL POPUP -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()"><i data-lucide="x"></i></button>
+      <div class="modal-tag" id="modalTag">Category</div>
+      <h2 class="modal-title" id="modalTitle">Project Title</h2>
+      <img id="modalImg" src="" alt="Project Image" class="modal-project-img">
+      <p class="modal-body" id="modalBody">Project Description...</p>
+      
+      <div class="modal-highlights">
+        <h4>Key Highlights / Fitur Utama:</h4>
+        <ul id="modalHighlights">
+          <li>Item 1</li>
+        </ul>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/aisyahmrymn-eng" target="_blank" class="btn-primary modal-btn" id="modalLink">
+          <i data-lucide="external-link" class="modal-link-icon"></i> Buka Repository / Detail
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
